@@ -11,8 +11,8 @@
 #define SMTP_PASSWORD "your_app_password"
 #define SENDER_EMAIL "your_email@example.com"
 #define RECIPIENT_EMAIL "recipient@example.com"
-#define EMAIL_SUBJECT "Test Email from ESP32"
-#define EMAIL_BODY "This is a test email from ESP32."
+#define EMAIL_SUBJECT "Mailbox Alert"
+#define EMAIL_BODY "Your outgoing mail has been picked up by a mail carrier."
 
 // Function to send email
 void send_email() {
@@ -24,6 +24,5 @@ void send_email() {
 }
 
 void app_main() {
-    // ... (Initialize WiFi, etc.)
     send_email();
 }
