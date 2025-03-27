@@ -16,8 +16,6 @@
 
 // Function to send email
 void send_email() {
-    // ... (Your code to connect to the SMTP server, construct the email, and send it)
-    // Example using esp_mail library (replace with your chosen library)
     esp_mail_client_init(SMTP_USERNAME, SMTP_PASSWORD, SMTP_SERVER, SMTP_PORT);
     esp_mail_client_send_email(SENDER_EMAIL, RECIPIENT_EMAIL, EMAIL_SUBJECT, EMAIL_BODY);
     esp_mail_client_deinit();
